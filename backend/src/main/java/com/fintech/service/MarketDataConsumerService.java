@@ -7,10 +7,12 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fintech.model.MarketData;
 import com.fintech.repository.MarketDataRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 
 @Service
 @Slf4j
 @RequiredArgsConstructor
+@ConditionalOnProperty(name = "app.kafka.enabled", havingValue = "true", matchIfMissing = false)
 public class MarketDataConsumerService {
     private final MarketDataRepository repository;
     private final ObjectMapper objectMapper;
