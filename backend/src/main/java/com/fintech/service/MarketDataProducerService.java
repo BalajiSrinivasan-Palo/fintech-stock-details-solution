@@ -7,10 +7,12 @@ import lombok.extern.slf4j.Slf4j;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fintech.model.MarketData;
 import lombok.RequiredArgsConstructor;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 
 @Service
 @Slf4j
 @RequiredArgsConstructor
+@ConditionalOnProperty(name = "app.kafka.enabled", havingValue = "true", matchIfMissing = false)
 public class MarketDataProducerService {
     private final KafkaTemplate<String, String> kafkaTemplate;
     private final ObjectMapper objectMapper;
@@ -27,4 +29,4 @@ public class MarketDataProducerService {
             log.error("Failed to publish market data", e);
         }
     }
-} 
+}
