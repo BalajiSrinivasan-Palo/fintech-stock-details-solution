@@ -1,4 +1,4 @@
-# Fintech Portfolio Management System
+<img width="1483" alt="Screenshot 2025-01-07 at 1 57 02 AM" src="https://github.com/user-attachments/assets/a7037989-db36-4a57-9f67-10241965a5e8" /># Fintech Portfolio Management System
 
 ## Overview
 
@@ -103,6 +103,14 @@ mvn spring-boot:run
 username: demo
 password: demo
 ```
+
+<img width="1483" alt="Screenshot 2025-01-07 at 1 56 49 AM" src="https://github.com/user-attachments/assets/048f3767-4051-4c04-ae09-8619e06528d4" />
+
+### View the Fintech stock price details
+
+
+<img width="1483" alt="Screenshot 2025-01-07 at 1 57 02 AM" src="https://github.com/user-attachments/assets/873e3afa-334a-4447-ad00-411793a16d13" />
+
 
 ### API Endpoints
 
