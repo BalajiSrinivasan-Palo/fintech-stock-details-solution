@@ -94,8 +94,6 @@ mvn spring-boot:run
 - Swagger UI: http://localhost:8080/swagger-ui.html
 - PgAdmin: http://localhost:5050
 
-In Login Screen, give username as "demo" and password as "demo"
-
 ## Usage Guide
 
 ### Authentication
