@@ -1,0 +1,2 @@
+# Copy this file to application.properties and fill in your values
+some.property=${GITHUB_TOKEN} 
