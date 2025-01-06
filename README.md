@@ -63,6 +63,7 @@ cd fintech-portfolio
 ```
 
 2. Environment Setup:
+ application.properties ,   replace ${GITUB_TOKEN} with your token
 
 ```bash
 # Create .env file in root directory
@@ -70,7 +71,6 @@ ENCRYPTION_KEY=your-encryption-key
 JWT_SECRET=your-jwt-secret
 ALPHAVANTAGE_API_KEY=your-api-key
 ```
-
 3. Build and Run:
 
 ```bash
@@ -93,6 +93,8 @@ mvn spring-boot:run
 - Backend API: http://localhost:8080
 - Swagger UI: http://localhost:8080/swagger-ui.html
 - PgAdmin: http://localhost:5050
+
+In Login Screen, give username as "demo" and password as "demo"
 
 ## Usage Guide
 
